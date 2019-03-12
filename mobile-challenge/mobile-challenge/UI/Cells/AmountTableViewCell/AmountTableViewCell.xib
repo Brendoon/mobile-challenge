@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AmountTableViewCell" id="KGk-i7-Jjw" customClass="AmountTableViewCell" customModule="mobile_challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 100.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSk-qj-99e">
+                        <rect key="frame" x="20" y="10" width="73.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.22352941179999999" green="0.58039215690000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sandbox: id_QRA4111130193012" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lia-bt-VKm">
+                        <rect key="frame" x="184" y="10" width="181" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.43529411764705883" green="0.45098039215686275" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cartão de crédito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wx4-GO-zSv">
+                        <rect key="frame" x="20" y="39" width="117.5" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.44705882352941173" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORD-TLWUSADST61W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qWR-3m-bQe">
+                        <rect key="frame" x="207" y="39" width="158" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.44705882349999998" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xSk-qj-99e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7M4-PC-Ffn"/>
+                    <constraint firstAttribute="trailing" secondItem="lia-bt-VKm" secondAttribute="trailing" constant="10" id="8nT-7u-tn0"/>
+                    <constraint firstItem="wx4-GO-zSv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="EB6-h5-FBx"/>
+                    <constraint firstItem="lia-bt-VKm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JAe-FQ-Koh"/>
+                    <constraint firstAttribute="trailing" secondItem="qWR-3m-bQe" secondAttribute="trailing" constant="10" id="JIa-LX-WgE"/>
+                    <constraint firstItem="wx4-GO-zSv" firstAttribute="top" secondItem="xSk-qj-99e" secondAttribute="bottom" constant="10" id="can-vx-oad"/>
+                    <constraint firstItem="lia-bt-VKm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xSk-qj-99e" secondAttribute="trailing" constant="10" id="dDq-cd-ht5"/>
+                    <constraint firstItem="qWR-3m-bQe" firstAttribute="bottom" secondItem="wx4-GO-zSv" secondAttribute="bottom" id="ekd-PN-yZO"/>
+                    <constraint firstItem="xSk-qj-99e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lqm-7e-lE5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.97254901960784312" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="idLabel" destination="qWR-3m-bQe" id="i91-eR-adU"/>
+                <outlet property="methodLabel" destination="wx4-GO-zSv" id="Iod-N7-Zc5"/>
+                <outlet property="ownIdLabel" destination="lia-bt-VKm" id="MT8-Xo-jtE"/>
+                <outlet property="totalAmountLabel" destination="xSk-qj-99e" id="FYs-zn-eAT"/>
+            </connections>
+            <point key="canvasLocation" x="369" y="60"/>
+        </tableViewCell>
+    </objects>
+</document>
