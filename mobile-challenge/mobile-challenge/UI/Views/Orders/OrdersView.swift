@@ -40,6 +40,12 @@ class OrdersView: UIView {
     headerView.update(with: ordersResponse.summary)
     tableView.update(with: ordersResponse.orders)
   }
+  
+  func deselectCell() {
+    if let index = tableView.indexPathForSelectedRow {
+      tableView.deselectRow(at: index, animated: true)
+    }
+  }
 }
 
 extension OrdersView: ViewCode {

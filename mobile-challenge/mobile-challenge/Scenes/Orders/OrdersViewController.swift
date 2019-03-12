@@ -58,6 +58,11 @@ class OrdersViewController: UIViewController {
     fetchOrders()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    ordersView.deselectCell()
+  }
+  
   override func loadView() {
     self.view = ordersView
   }
