@@ -18,8 +18,8 @@ class SummaryTableViewCell: OrderDetailsBaseTableViewCell {
   }
   
   override func setup(with item: Order) {
-    totalAmountLabel.text = Double.toCurrency(value: Double(item.amount.total), code: item.amount.currency)
-    feesLabel.text = Double.toCurrency(value: Double(item.amount.fees), code: item.amount.currency)
-    liquidLabel.text = Double.toCurrency(value: Double(item.amount.liquid!), code: item.amount.currency)
+    totalAmountLabel.text = "+ " + Double.toCurrency(value: Double(item.amount.total), code: item.amount.currency)!
+    feesLabel.text = "- " + Double.toCurrency(value: Double(item.amount.fees), code: item.amount.currency)!
+    liquidLabel.text = "= " + Double.toCurrency(value: Double(item.amount.liquid!), code: item.amount.currency)!
   }
 }
