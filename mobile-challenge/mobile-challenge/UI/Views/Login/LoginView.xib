@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,11 +13,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginView" customModule="mobile_challenge" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NDT-T5-CzE">
-                    <rect key="frame" x="30" y="247.5" width="315" height="192"/>
+                    <rect key="frame" x="30" y="315" width="315" height="192"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJg-0S-fwD" customClass="TextFieldContainer" customModule="mobile_challenge" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
@@ -30,7 +30,7 @@
                                     <textInputTraits key="textInputTraits" textContentType="email"/>
                                 </textField>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="4xu-2C-eSO">
-                                    <rect key="frame" x="0.0" y="4.5" width="40" height="35"/>
+                                    <rect key="frame" x="0.0" y="4.3333333333333144" width="40" height="35.333333333333336"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="SSH-RU-YaY"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Sp3-rK-UGX"/>
@@ -74,7 +74,7 @@
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locker" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-hf-4qU">
-                                    <rect key="frame" x="0.0" y="4.5" width="40" height="35"/>
+                                    <rect key="frame" x="0.0" y="4.3333333333333144" width="40" height="35.333333333333336"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="UAT-Bl-cWe"/>
                                     </constraints>
@@ -135,7 +135,7 @@
                     </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDP-vE-EiD">
-                    <rect key="frame" x="119" y="479.5" width="137" height="28.5"/>
+                    <rect key="frame" x="119" y="547" width="137" height="28.666666666666629"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
                             <fragment content="Esqueci minha senha">
@@ -151,7 +151,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWL-o8-meG">
-                    <rect key="frame" x="118.5" y="548" width="138" height="28.5"/>
+                    <rect key="frame" x="118.66666666666669" y="615.66666666666663" width="138" height="28.666666666666629"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
                             <fragment content="Criar uma conta nova">
@@ -165,10 +165,10 @@
                     </state>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-1J-v8E">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <subviews>
                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vcK-Sg-Lna">
-                            <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
                             <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </activityIndicatorView>
                     </subviews>
@@ -179,7 +179,7 @@
                     </constraints>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="krb-RN-eSo">
-                    <rect key="frame" x="108" y="103.5" width="159" height="68"/>
+                    <rect key="frame" x="108" y="130.33333333333334" width="159" height="68"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.3529411764705882" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -193,7 +193,7 @@
                 <constraint firstItem="AWL-o8-meG" firstAttribute="top" secondItem="GDP-vE-EiD" secondAttribute="bottom" constant="40" id="OwV-0q-4xs"/>
                 <constraint firstItem="GDP-vE-EiD" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="SfN-oC-U21"/>
                 <constraint firstItem="NDT-T5-CzE" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Xcf-5I-nDB"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9vV-1J-v8E" secondAttribute="bottom" id="ZZf-bI-DyN"/>
+                <constraint firstAttribute="bottom" secondItem="9vV-1J-v8E" secondAttribute="bottom" id="ZZf-bI-DyN"/>
                 <constraint firstItem="9vV-1J-v8E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="u7A-dc-WBu"/>
                 <constraint firstItem="krb-RN-eSo" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xXO-wD-hTf"/>
                 <constraint firstItem="GDP-vE-EiD" firstAttribute="top" secondItem="NDT-T5-CzE" secondAttribute="bottom" constant="40" id="zHq-OR-dGp"/>

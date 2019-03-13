@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-wP-m7n">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-wP-m7n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="YzV-fF-8iu">
-                                <rect key="frame" x="112.5" y="249" width="150" height="169"/>
+                                <rect key="frame" x="112.66666666666669" y="321.66666666666669" width="150" height="168.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YzV-fF-8iu" secondAttribute="height" multiplier="16:18" id="eio-xc-MXm"/>
                                     <constraint firstAttribute="width" constant="150" id="zG0-D7-90M"/>
@@ -31,10 +31,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5CH-wP-m7n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="18Z-Ia-GYV"/>
                             <constraint firstItem="YzV-fF-8iu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="A2Z-tw-NI9"/>
-                            <constraint firstItem="5CH-wP-m7n" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IOq-oO-6ta"/>
+                            <constraint firstItem="5CH-wP-m7n" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HMU-zp-O4N"/>
+                            <constraint firstAttribute="bottom" secondItem="5CH-wP-m7n" secondAttribute="bottom" id="VUJ-hC-9eV"/>
                             <constraint firstItem="YzV-fF-8iu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="f9u-vm-2zV"/>
-                            <constraint firstItem="5CH-wP-m7n" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mwY-j6-arh"/>
+                            <constraint firstItem="5CH-wP-m7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tfN-WR-ECd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
