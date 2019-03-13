@@ -21,7 +21,6 @@ class LoginView: UIView {
   class func loadFromNib() -> LoginView {
     let nib = UINib(nibName: String(describing: self), bundle: .main)
     let view = nib.instantiate(withOwner: nil, options: nil).first as! LoginView
-    view.applyGradient(withColours: [ColorPalette.blue, ColorPalette.lightBlue], gradientOrientation: .topRightBottomLeft)
     return view
   }
   
@@ -30,6 +29,7 @@ class LoginView: UIView {
     usernameContainer.textField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     passwordContainer.textField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     accessButton.isUserInteractionEnabled = false
+    applyGradient(withColours: [ColorPalette.blue, ColorPalette.lightBlue], gradientOrientation: .topRightBottomLeft)
     loadingView.applyGradient(withColours: [ColorPalette.blue, ColorPalette.lightBlue], gradientOrientation: .topRightBottomLeft)
   }
   
