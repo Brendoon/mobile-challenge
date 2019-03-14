@@ -42,15 +42,15 @@ class SummaryTableViewCellSpec: QuickSpec {
       }
       
       it("should have expected fees after setup") {
-        expect(cell.feesLabel.text).to(equal(Double.toCurrency(value: Double(order.amount.fees))))
+        expect(cell.feesLabel.text).to(equal("- " + Double.toCurrency(value: Double(order.amount.fees))!))
       }
       
-      it("should have expected fees after setup") {
-        expect(cell.liquidLabel.text).to(equal(Double.toCurrency(value: Double(order.amount.liquid ?? 0))))
+      it("should have expected liquid after setup") {
+        expect(cell.liquidLabel.text).to(equal("= " + Double.toCurrency(value: Double(order.amount.liquid ?? 0))!))
       }
       
-      it("should have expected fees after setup") {
-        expect(cell.totalAmountLabel.text).to(equal(Double.toCurrency(value: Double(order.amount.total))))
+      it("should have expected total amount after setup") {
+        expect(cell.totalAmountLabel.text).to(equal("+ " + Double.toCurrency(value: Double(order.amount.total))!))
       }
     }
   }

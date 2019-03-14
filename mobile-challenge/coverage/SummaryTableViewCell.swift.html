@@ -114,17 +114,17 @@
 </tr>
 <tr class="covered">
 <td class="num">21</td>
-<td class="src"><pre><code class="objc">    totalAmountLabel.text = Double.toCurrency(value: Double(item.amount.total), code: item.amount.currency)</code></pre></td>
+<td class="src"><pre><code class="objc">    totalAmountLabel.text = "+ " + Double.toCurrency(value: Double(item.amount.total), code: item.amount.currency)!</code></pre></td>
 <td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">22</td>
-<td class="src"><pre><code class="objc">    feesLabel.text = Double.toCurrency(value: Double(item.amount.fees), code: item.amount.currency)</code></pre></td>
+<td class="src"><pre><code class="objc">    feesLabel.text = "- " + Double.toCurrency(value: Double(item.amount.fees), code: item.amount.currency)!</code></pre></td>
 <td class="coverage">6x</td>
 </tr>
 <tr class="covered">
 <td class="num">23</td>
-<td class="src"><pre><code class="objc">    liquidLabel.text = Double.toCurrency(value: Double(item.amount.liquid!), code: item.amount.currency)</code></pre></td>
+<td class="src"><pre><code class="objc">    liquidLabel.text = "= " + Double.toCurrency(value: Double(item.amount.liquid!), code: item.amount.currency)!</code></pre></td>
 <td class="coverage">6x</td>
 </tr>
 <tr class="covered">

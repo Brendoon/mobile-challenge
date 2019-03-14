@@ -7,9 +7,9 @@
 <body>
 <header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
 <h2 class="cov_title">
-<span>Coverage for "OrdersView.swift" : </span><span class="cov_high">100.00%</span>
+<span>Coverage for "OrdersView.swift" : </span><span class="cov_high">91.07%</span>
 </h2>
-<h4 class="cov_subtitle">(51 of 51 relevant lines covered)</h4>
+<h4 class="cov_subtitle">(51 of 56 relevant lines covered)</h4>
 <h4 class="cov_filepath">mobile-challenge/UI/Views/Orders/OrdersView.swift</h4>
 <table class="source_code">
 <tr class="never">
@@ -224,156 +224,186 @@
 </tr>
 <tr class="never">
 <td class="num">43</td>
+<td class="src"><pre><code class="objc">  </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="missed">
+<td class="num">44</td>
+<td class="src"><pre><code class="objc">  func deselectCell() {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">45</td>
+<td class="src"><pre><code class="objc">    if let index = tableView.indexPathForSelectedRow {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">46</td>
+<td class="src"><pre><code class="objc">      tableView.deselectRow(at: index, animated: true)</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">47</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">48</td>
+<td class="src"><pre><code class="objc">  }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="never">
+<td class="num">49</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">44</td>
+<td class="num">50</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">45</td>
+<td class="num">51</td>
 <td class="src"><pre><code class="objc">extension OrdersView: ViewCode {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">46</td>
+<td class="num">52</td>
 <td class="src"><pre><code class="objc">  func buildViewHierarchy() {</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">47</td>
+<td class="num">53</td>
 <td class="src"><pre><code class="objc">    addSubview(headerView)</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">48</td>
+<td class="num">54</td>
 <td class="src"><pre><code class="objc">    addSubview(tableView)</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">49</td>
+<td class="num">55</td>
 <td class="src"><pre><code class="objc">    addSubview(activityIndicator)</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">50</td>
+<td class="num">56</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="never">
-<td class="num">51</td>
+<td class="num">57</td>
 <td class="src"><pre><code class="objc">  </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">52</td>
+<td class="num">58</td>
 <td class="src"><pre><code class="objc">  func setupConstraints() {</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">53</td>
+<td class="num">59</td>
 <td class="src"><pre><code class="objc">    let height: CGFloat = 80</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">54</td>
-<td class="src"><pre><code class="objc">    </code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
-<td class="num">55</td>
-<td class="src"><pre><code class="objc">    headerView.snp.makeConstraints { make in</code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
-<td class="num">56</td>
-<td class="src"><pre><code class="objc">      make.top.equalToSuperview()</code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
-<td class="num">57</td>
-<td class="src"><pre><code class="objc">      make.leading.equalToSuperview()</code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
-<td class="num">58</td>
-<td class="src"><pre><code class="objc">      make.trailing.equalToSuperview()</code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
-<td class="num">59</td>
-<td class="src"><pre><code class="objc">      make.height.equalTo(height)</code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
 <td class="num">60</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
 <td class="num">61</td>
-<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="src"><pre><code class="objc">    headerView.snp.makeConstraints { make in</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
 <td class="num">62</td>
-<td class="src"><pre><code class="objc">    tableView.snp.makeConstraints { make in</code></pre></td>
+<td class="src"><pre><code class="objc">      make.top.equalToSuperview()</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
 <td class="num">63</td>
-<td class="src"><pre><code class="objc">      make.top.equalTo(height)</code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
-<td class="num">64</td>
-<td class="src"><pre><code class="objc">      make.bottom.equalToSuperview()</code></pre></td>
-<td class="coverage">10x</td>
-</tr>
-<tr class="covered">
-<td class="num">65</td>
 <td class="src"><pre><code class="objc">      make.leading.equalToSuperview()</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">66</td>
+<td class="num">64</td>
 <td class="src"><pre><code class="objc">      make.trailing.equalToSuperview()</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">67</td>
+<td class="num">65</td>
+<td class="src"><pre><code class="objc">      make.height.equalTo(height)</code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
+<td class="num">66</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
-<td class="num">68</td>
+<td class="num">67</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
+<td class="num">68</td>
+<td class="src"><pre><code class="objc">    tableView.snp.makeConstraints { make in</code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
 <td class="num">69</td>
-<td class="src"><pre><code class="objc">    activityIndicator.snp.makeConstraints { make in</code></pre></td>
+<td class="src"><pre><code class="objc">      make.top.equalTo(height)</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
 <td class="num">70</td>
-<td class="src"><pre><code class="objc">      make.edges.equalToSuperview()</code></pre></td>
+<td class="src"><pre><code class="objc">      make.bottom.equalToSuperview()</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
 <td class="num">71</td>
-<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="src"><pre><code class="objc">      make.leading.equalToSuperview()</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="covered">
 <td class="num">72</td>
+<td class="src"><pre><code class="objc">      make.trailing.equalToSuperview()</code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
+<td class="num">73</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
+<td class="num">74</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
+<td class="num">75</td>
+<td class="src"><pre><code class="objc">    activityIndicator.snp.makeConstraints { make in</code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
+<td class="num">76</td>
+<td class="src"><pre><code class="objc">      make.edges.equalToSuperview()</code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
+<td class="num">77</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">10x</td>
+</tr>
+<tr class="covered">
+<td class="num">78</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">10x</td>
 </tr>
 <tr class="never">
-<td class="num">73</td>
+<td class="num">79</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>

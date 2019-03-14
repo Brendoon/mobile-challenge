@@ -7,9 +7,9 @@
 <body>
 <header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
 <h2 class="cov_title">
-<span>Coverage for "OrdersViewController.swift" : </span><span class="cov_medium">82.26%</span>
+<span>Coverage for "OrdersViewController.swift" : </span><span class="cov_medium">77.27%</span>
 </h2>
-<h4 class="cov_subtitle">(51 of 62 relevant lines covered)</h4>
+<h4 class="cov_subtitle">(51 of 66 relevant lines covered)</h4>
 <h4 class="cov_filepath">mobile-challenge/Scenes/Orders/OrdersViewController.swift</h4>
 <table class="source_code">
 <tr class="never">
@@ -312,39 +312,39 @@
 <td class="src"><pre><code class="objc">  </code></pre></td>
 <td class="coverage"></td>
 </tr>
-<tr class="covered">
+<tr class="missed">
 <td class="num">61</td>
-<td class="src"><pre><code class="objc">  override func loadView() {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">  override func viewWillAppear(_ animated: Bool) {</code></pre></td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
+<tr class="missed">
 <td class="num">62</td>
-<td class="src"><pre><code class="objc">    self.view = ordersView</code></pre></td>
-<td class="coverage">1x</td>
+<td class="src"><pre><code class="objc">    super.viewWillAppear(animated)</code></pre></td>
+<td class="coverage">!</td>
 </tr>
-<tr class="covered">
+<tr class="missed">
 <td class="num">63</td>
+<td class="src"><pre><code class="objc">    ordersView.deselectCell()</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">64</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">64</td>
+<td class="num">65</td>
 <td class="src"><pre><code class="objc">  </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">65</td>
-<td class="src"><pre><code class="objc">  func setupView() {</code></pre></td>
-<td class="coverage">1x</td>
-</tr>
-<tr class="covered">
 <td class="num">66</td>
-<td class="src"><pre><code class="objc">    ordersView.tableView.prefetchDataSource = self</code></pre></td>
+<td class="src"><pre><code class="objc">  override func loadView() {</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
 <td class="num">67</td>
-<td class="src"><pre><code class="objc">    ordersView.tableView.setSelectionHandler(didSelectOrder)</code></pre></td>
+<td class="src"><pre><code class="objc">    self.view = ordersView</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
@@ -359,211 +359,236 @@
 </tr>
 <tr class="covered">
 <td class="num">70</td>
-<td class="src"><pre><code class="objc">  func didSelectOrder(_ order: Order) {</code></pre></td>
+<td class="src"><pre><code class="objc">  func setupView() {</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
 <td class="num">71</td>
-<td class="src"><pre><code class="objc">    interactor?.fetchOrderDetails(id: order.id)</code></pre></td>
+<td class="src"><pre><code class="objc">    ordersView.tableView.prefetchDataSource = self</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
 <td class="num">72</td>
+<td class="src"><pre><code class="objc">    ordersView.tableView.setSelectionHandler(didSelectOrder)</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">73</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="never">
-<td class="num">73</td>
-<td class="src"><pre><code class="objc">  </code></pre></td>
-<td class="coverage"></td>
-</tr>
-<tr class="never">
 <td class="num">74</td>
-<td class="src"><pre><code class="objc">  // MARK: Fetch Orders</code></pre></td>
+<td class="src"><pre><code class="objc">  </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
 <td class="num">75</td>
+<td class="src"><pre><code class="objc">  func didSelectOrder(_ order: Order) {</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">76</td>
+<td class="src"><pre><code class="objc">    interactor?.fetchOrderDetails(id: order.id)</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">77</td>
+<td class="src"><pre><code class="objc">  }</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="never">
+<td class="num">78</td>
+<td class="src"><pre><code class="objc">  </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">79</td>
+<td class="src"><pre><code class="objc">  // MARK: Fetch Orders</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">80</td>
 <td class="src"><pre><code class="objc">  func fetchOrders() {</code></pre></td>
 <td class="coverage">9x</td>
 </tr>
 <tr class="covered">
-<td class="num">76</td>
+<td class="num">81</td>
 <td class="src"><pre><code class="objc">    if currentCount == 0 {</code></pre></td>
 <td class="coverage">9x</td>
 </tr>
 <tr class="covered">
-<td class="num">77</td>
+<td class="num">82</td>
 <td class="src"><pre><code class="objc">      ordersView.activityIndicator.startAnimating()</code></pre></td>
 <td class="coverage">9x</td>
 </tr>
 <tr class="covered">
-<td class="num">78</td>
+<td class="num">83</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
 <td class="coverage">9x</td>
 </tr>
 <tr class="covered">
-<td class="num">79</td>
+<td class="num">84</td>
 <td class="src"><pre><code class="objc">    interactor?.fetchOrders()</code></pre></td>
 <td class="coverage">9x</td>
 </tr>
 <tr class="covered">
-<td class="num">80</td>
+<td class="num">85</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">9x</td>
 </tr>
 <tr class="never">
-<td class="num">81</td>
+<td class="num">86</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">82</td>
+<td class="num">87</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">83</td>
+<td class="num">88</td>
 <td class="src"><pre><code class="objc">extension OrdersViewController: OrdersDisplayLogic {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">84</td>
+<td class="num">89</td>
 <td class="src"><pre><code class="objc">  func displayOrders(viewModel: Orders.All.ViewModel) {</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
-<td class="num">85</td>
+<td class="num">90</td>
 <td class="src"><pre><code class="objc">    currentCount += 20</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
-<td class="num">86</td>
+<td class="num">91</td>
 <td class="src"><pre><code class="objc">    ordersView.update(with: viewModel.ordersResponse!)</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
-<td class="num">87</td>
+<td class="num">92</td>
 <td class="src"><pre><code class="objc">    ordersView.activityIndicator.stopAnimating()</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
-<td class="num">88</td>
+<td class="num">93</td>
 <td class="src"><pre><code class="objc">    ordersView.tableView.footerView.activityIndicator.stopAnimating()</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
-<td class="num">89</td>
+<td class="num">94</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="never">
-<td class="num">90</td>
+<td class="num">95</td>
 <td class="src"><pre><code class="objc">  </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="missed">
-<td class="num">91</td>
+<td class="num">96</td>
 <td class="src"><pre><code class="objc">  func displayOrderDetails(viewModel: Orders.Details.ViewModel) {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">92</td>
+<td class="num">97</td>
 <td class="src"><pre><code class="objc">    router?.routeToOrderDetails()</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">93</td>
+<td class="num">98</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">94</td>
+<td class="num">99</td>
 <td class="src"><pre><code class="objc">  </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="missed">
-<td class="num">95</td>
+<td class="num">100</td>
 <td class="src"><pre><code class="objc">  func displayErrorMessage(viewModel: Orders.All.ViewModel) {}</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">96</td>
+<td class="num">101</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">97</td>
+<td class="num">102</td>
 <td class="src"><pre><code class="objc"></code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">98</td>
+<td class="num">103</td>
 <td class="src"><pre><code class="objc">// MARK: - UICollectionViewDataSourcePrefetching</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="never">
-<td class="num">99</td>
+<td class="num">104</td>
 <td class="src"><pre><code class="objc">extension OrdersViewController: UITableViewDataSourcePrefetching {</code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="covered">
-<td class="num">100</td>
+<td class="num">105</td>
 <td class="src"><pre><code class="objc">  func isLoadingCell(for tag: Int) -&gt; Bool {</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
-<td class="num">101</td>
+<td class="num">106</td>
 <td class="src"><pre><code class="objc">    return tag + 1 &gt;= currentCount</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="covered">
-<td class="num">102</td>
+<td class="num">107</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">1x</td>
 </tr>
 <tr class="never">
-<td class="num">103</td>
+<td class="num">108</td>
 <td class="src"><pre><code class="objc">  </code></pre></td>
 <td class="coverage"></td>
 </tr>
 <tr class="missed">
-<td class="num">104</td>
+<td class="num">109</td>
 <td class="src"><pre><code class="objc">  func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">105</td>
+<td class="num">110</td>
 <td class="src"><pre><code class="objc">    guard let tag = tableView.visibleCells.last?.tag else { return }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">106</td>
+<td class="num">111</td>
 <td class="src"><pre><code class="objc">    if isLoadingCell(for: tag) {</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">107</td>
+<td class="num">112</td>
 <td class="src"><pre><code class="objc">      ordersView.tableView.footerView.activityIndicator.startAnimating()</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">108</td>
+<td class="num">113</td>
 <td class="src"><pre><code class="objc">      fetchOrders()</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">109</td>
+<td class="num">114</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="missed">
-<td class="num">110</td>
+<td class="num">115</td>
 <td class="src"><pre><code class="objc">  }</code></pre></td>
 <td class="coverage">!</td>
 </tr>
 <tr class="never">
-<td class="num">111</td>
+<td class="num">116</td>
 <td class="src"><pre><code class="objc">}</code></pre></td>
 <td class="coverage"></td>
 </tr>
